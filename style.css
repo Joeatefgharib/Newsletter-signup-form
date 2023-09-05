@@ -1,0 +1,72 @@
+:root {
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--Charcoal-Grey);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: auto;
+  font-family: "Roboto", sans-serif;
+  background: var(--White);
+  width: auto;
+  height: auto;
+  border-radius: 2rem;
+  padding: 4rem;
+}
+.content {
+  color: var(--Dark-Slate-Grey);
+}
+.container h1 {
+  font-weight: 700;
+}
+.container p {
+  font-size: 16px;
+}
+.first,
+.second,
+.third {
+  display: flex;
+}
+.first p,
+.second p,
+.third p {
+  margin-left: 15px;
+}
+.btnContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnContent label {
+  color: var(--Dark-Slate-Grey);
+  font-weight: 700;
+  font-size: 12px;
+}
+.btnContent input {
+  padding: 10px;
+  border-radius: 0.5rem;
+  border-style: solid;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+button {
+  background: var(--Dark-Slate-Grey);
+  padding: 20px;
+  color: white;
+  border-style: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
