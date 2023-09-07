@@ -13,6 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  font-family: "Roboto", sans-serif;
 }
 .container {
   display: flex;
@@ -24,16 +25,20 @@ body {
   width: auto;
   height: auto;
   border-radius: 2rem;
-  padding: 4rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
 }
 .content {
   color: var(--Dark-Slate-Grey);
+  padding-right: 4rem;
 }
 .container h1 {
   font-weight: 700;
+  font-size: 50px;
 }
 .container p {
   font-size: 16px;
+  font-weight: 400;
 }
 .first,
 .second,
@@ -48,25 +53,61 @@ body {
 .btnContent {
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
 
 .btnContent label {
   color: var(--Dark-Slate-Grey);
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
 }
 .btnContent input {
-  padding: 10px;
-  border-radius: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
   border-style: solid;
   margin-top: 5px;
   margin-bottom: 15px;
+  border-color: rgb(218, 213, 213);
 }
-button {
+.submitBtn {
   background: var(--Dark-Slate-Grey);
   padding: 20px;
   color: white;
   border-style: none;
   font-weight: 700;
   border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 15px;
+}
+.submitBtn:hover {
+  background-color: #ff864d;
+  transition: 0.5s ease-out;
+}
+.image {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.successContainer {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 4rem;
+  width: 380px;
+  color: var(--Dark-Slate-Grey);
+  display: none;
+}
+.dismissBtn {
+  background: var(--Dark-Slate-Grey);
+  padding: 20px;
+  color: white;
+  border-style: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding-left: 123px;
+  padding-right: 123px;
+  font-size: 15px;
+}
+.dismissBtn:hover {
+  background-color: #ff864d;
+  transition: 0.5s ease-out;
 }
